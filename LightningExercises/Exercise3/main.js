@@ -13,3 +13,10 @@ function subtracting (num1, num2) {
 }
 subtracting(3, 4)
 
+function calculate(a, b, operator) {
+    operator(a,b)
+}
+
+calculate(1, 3, subtracting)
+
+
