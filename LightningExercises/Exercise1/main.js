@@ -14,7 +14,7 @@ function go (direction, speed) {
 }
 
 go("down the freakin highway", "50")
-go("backwards", "50")
+go("backwards", "91")
 
 /*Add a condition inside the function to check if the speed is greater than 75 mph. If it is, add an additional message of SLOW DOWN!
 
