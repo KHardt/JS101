@@ -41,7 +41,8 @@ conjunction("Master", "Card")
 }
 */
 
-//SIMON SAYS- 
+//SIMON SAYS - not sure what output is expected
+/*
 const locations = [[1,1], [1,2], [1,3], [2,1], [2,2], [2,3]]
 
 for (let k = 0; k < locations.length; k++) {
@@ -51,13 +52,28 @@ for (let k = 0; k < locations.length; k++) {
         const invalidLocation = true
     }
 
-    if (invalidLocation = true) {
+    if (invalidLocation) {
         console.log("This location is invalid")
     }
     console.log(`There were ${k} invalid locations`)
-}
-
+} */
 /*
     Since k is used as the loop counter, it will be the
     total number of locations, not the invalid ones. You
     need to fix this somehow. */
+    
+//LAMBDA LLLAMA- got this to work but needed to look at old work this time. Simplier way this time. Need the second function completed to give you something (return). Then console log the call. Then get out of the master function and call it. Should be all you need to get it to randomly generate the name per call.
+    const llamaNamer = function () {
+        const possibleNames = ["Larry", "Leon", "Leona", "Les", "Laura", "Lemony", "Lars", "Lekisha"]
+        const randomizer = Math.floor(Math.random() * 7)
+    
+        const namer = function () {
+            const suffix = " the Llama"
+            const name = possibleNames[randomizer];
+            return name + suffix;
+        }
+        console.log(namer());
+         
+    }
+llamaNamer();
+        
