@@ -1,17 +1,8 @@
-const employee = {
-    firstName: "Michael",
-    lastName: "Tambornino",
-    role: "Sales Rep",
-    accountNumber: "1-8349058340"
-}
+const sangerDB = [];
 
-const antiqueSecretary = {
-    name: "Beidemieher Secretary",
-    location: "Mom's Basement",
-    description: "Belonged to Grandmother. Antique. Value unknown."
-  }
 
   const districtInfo = {
+        repName: "Elizabeth Sanger",
         name: "5th Congressional District",
         location: "Nashville, TN",
         Time: "2003-present"
@@ -35,9 +26,40 @@ const antiqueSecretary = {
       Sept: "Titan's Dinner event"
   }
 
-  const volunteerInfo = [
-    volList: {
+  const volunteerList = [
+     {
+         name: "",
+         address: "",
+         email: "",
+         PhoneNumber: "",
+         Available: "",
+         //Activities = ["poling", "phones"]
 
     }
-
 ]
+const personalBio = {
+    name: "Elizabeth Sanger",
+    dateOfBirth: "01-04-62",
+    placeOfBirth: "St Louis, MS",
+    children: "none",
+    parents: "Bret and Margaret Sanger"
+}
+
+const imageGallery = {
+    headShot: "",
+    familyPics: "",
+    constituentPics: ""
+}
+
+const missionStatement = {
+    statement: "we hold these truths to be self-evident"
+}
+
+const voterRegistration = {
+    url: "",
+}
+
+sangerDB.push(districtInfo, platFormStatements);
+console.log(sangerDB)
+console.log(sangerDB[0])
+
