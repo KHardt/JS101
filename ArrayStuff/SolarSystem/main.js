@@ -15,42 +15,39 @@ const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uran
 const planetEl = document.getElementById("planets");
 
 planets.forEach((item) => {
-    let planetString = " this is planet " + item;
+    let planetString = " this is the planet " + item;
     console.log(planetString);
     planetEl.innerHTML += `<li>${planetString}</li>`
 })
 
-/*
-let reverseColors = colors.map((color) => {
-    let wordArray = color.split("");
-    let reverseArray = wordArray.reverse();
-    return reverseArray.join("");
-})
-console.log("reverseColor", reverseColors)
-*/
+
 
 let newMapArray = planets.map((planet) => {
-    //let planetArray = planet.split("");
-    //let upperArray = planetArray.toUpperCase();
-    //return upperArray.join("");
-    return planet.toUpperCase();
+    return planet.charAt(0).toUpperCase() + planet.slice(1)
 })
 console.log(newMapArray)
-/* function myFunction() {
-    x = document.getElementById("demo")
-    x.innerHTML = numbers.map(Math.sqrt);
-    */
-   /*function toUpperStuff() {
-       x = document.getElementById("planets");
-       x.innerHTML = planets.map.toUpperCase;
-   }
-   toUpperStuff()*/
-/*let addUpper = planets.map((toUpperCase) => {
-    console.log(addUpper);
-});*/
-//addUpper(addUpper);
+
+
+/*
+    Use the filter method to create a new array that
+    contains planets with the letter 'e'. Use the `includes()`
+    method on strings.
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+*/
 
 
 
+let letterE = planets.filter((taco) => {
+    return taco.includes("e")
+})
+console.log(letterE)
 
+// Use the reduce method to create a sentence from the words in the following array
+const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+
+//copied straight out of mozilla..except I added the template lit to give spaces
+const reducer = (accumulator, currentValue) => `${accumulator} ${currentValue}`;
+
+console.log(words.reduce(reducer));
 
