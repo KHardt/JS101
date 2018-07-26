@@ -15,8 +15,8 @@ function printToDom (dataStuff) {
     `<div>
     <h2>${dataStuff[i].type}</h2>
     <h3>Flavor: ${dataStuff[i].flavor}</h3>
-    <h3>After Affect: ${dataStuff[i].afterAffect}</h3>
-    <h3>Death Count: ${dataStuff[i].amount}</h3>
+    <h3>After affect: ${dataStuff[i].afterAffect}</h3>
+    <h3>Death count: ${dataStuff[i].amount}</h3>
     </div>` 
     
     }
@@ -25,14 +25,12 @@ function printToDom (dataStuff) {
 }
 
 
+document.querySelector('#txtSearch').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      // code for enter
+    }
+});
 
-/*
-const loadDatabasePersonal = function (localStorageKey) {
-    
-    const databaseString = localStorage.getItem(localStorageKey)
 
-    
-    return JSON.parse(databaseString)
-} 
 
-let data = loadDatabasePersonal("NicolasCageDBPersonal") */
+
