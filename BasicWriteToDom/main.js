@@ -1,28 +1,34 @@
-//let myCost = 3/1.5;
-//console.log(myCost);
 
-/*let phrase = "The quick brown fox";
-
-let newStuff = `<h2>My Favorite Poems of Ice Cream</h2>
-                <p>${phrase}</p>
-                <h3>By Brenda Long</h3>`;
-
-console.log(newStuff) */
-
+//Part1: p
 const addToDom = document.querySelector(".article_header");
-addToDom.textContent = "Welcome the Klausinhagen blog";
+addToDom.textContent = "Welcome to the Klausinhagen blog";
 
-const allHeaders = document.querySelectorAll(".article_header", "div")
-allHeaders.className = "article_header.important" 
 
-//test to see what is getting hit:
+
+//Part2:
+
+const allHeaders = document.querySelectorAll(".article_header")
+allHeaders.className = "important";
+
+
+//test1 to see what is getting hit: NOTE CSS file for testing purposes to see that class changes actually DID something.
 /*var x = document.querySelectorAll(".article_header");
     x[0].style.backgroundColor = "red";*/
 
-var test1 = document.querySelectorAll(".article_header").length
+
+//sanity test2: it's one!
+var test1 = document.querySelectorAll(".important").length
 console.log(test1)
+//sanity test3: it's one!
+//will need to do a loop or specific to each one- classname will not copperate if accessing a node-
 
-const test2 = document.querySelector("div")//.querySelectorAll(".article_header")
-test2.className = "article_header.important" 
+myNodeList = document.querySelectorAll(".article_header")
+for (var i = 0; i < myNodeList.length; i++) {
+    var item = myNodeList[i]; 
+    item.className += " important";
+    console.log(item)
+    // 
+  }
 
-//notes to ask- can a class name be with spaces like article_ header importnant?
+//final notes. Since there were TWO underscores for the second article_header class (article__header) which I missed- the node list was coming back one in my test2. and in test3 originally. BigSib caught that. 
+//i could of opted to change each one indiviually but decided to utilize the loop to practice going over the node list and querySelectorAll. 

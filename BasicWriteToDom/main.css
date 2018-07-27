@@ -3,7 +3,11 @@ body {
     background-color: teal
 }
 */
-.aside_box--dark dashed :first-child {
+/*.dashed :first-child {
     color: teal;
     font-size: 2em;
+} */
+
+.important {
+    color: teal;
 }
