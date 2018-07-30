@@ -1,20 +1,33 @@
-//button1:
-function handlerFunction () {
-    document.getElementById("flight").className = "enabled"
+//got single function to work: still have 3 listeners though
+function activateEach () {
+    //let x = event.target;
+    if (document.querySelector(".disabled")) {
+    document.querySelector(".disabled").className = "enabled"
+    }
 }
-document.querySelector("#activate-flight").addEventListener("click", handlerFunction)
+
+//button1:
+/*function handlerFunction () {
+    document.getElementById("flight").className = "enabled"
+}*/
+document.querySelector("#activate-flight").addEventListener("click", activateEach)
 
 //button2:
-function handlerFunction2 () {
+/*function handlerFunction2 () {
     document.getElementById("mindreading").className = "enabled"
-}
-document.querySelector("#activate-mindreading").addEventListener("click", handlerFunction2)
+} */
+document.querySelector("#activate-mindreading").addEventListener("click", activateEach)
 
 //button3:
-function handlerFunction3 () {
+/*function handlerFunction3 () {
     document.getElementById("xray").className = "enabled"
-}
-document.querySelector("#activate-xray").addEventListener("click", handlerFunction3)
+}*/
+
+document.querySelector("#activate-xray").addEventListener("click", activateEach)
+
+
+
+
 
 //all buttons enabled:
 nodeList = document.querySelectorAll(".power")
