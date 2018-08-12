@@ -1,0 +1,48 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "Name": "Joe Fool",
+      "Dept": 2,
+      "Computer": 2
+    },
+    {
+      "id": 2,
+      "Name": "Lambo Joe",
+      "Dept": 1,
+      "Computer": 1
+    },
+    {
+      "id": 3,
+      "Name": "Psycho Nancy",
+      "Dept": 1,
+      "Computer": 1
+    }
+  ],
+  "Department": [
+    {
+      "id": 1,
+      "name": "Medical"
+    },
+    {
+      "id": 2,
+      "name": "Development"
+    },
+    {
+      "id:": 3,
+      "name": "Tech Support"
+    }
+  ],
+
+  "Computer": [
+    {
+    "id": 1,
+    "type": "Expensive Macbook"
+    },
+    {
+      "id": 2,
+      "type": "Windows"
+    }
+  ]
+
+}
